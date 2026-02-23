@@ -1,0 +1,9 @@
+title: OpenCanvas Blog
+description: Insights, updates, and product thinking.
+baseurl: ""
+url: "https://blog.opencanvas.tech"
+
+theme: minima
+
+plugins:
+  - jekyll-feed
