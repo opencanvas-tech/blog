@@ -12,7 +12,7 @@ layout: default
 
 <div class="newsletter-embed">
   <iframe 
-    src="https://docs.google.com/forms/d/e/1FAIpQLSevbtkHnCDa3zA5cQBt3g8grVAOQ-HVXZgokBslLvvjImHCYQ/viewform?embedded=true"
+    src="https://docs.google.com/forms/d/e/1FAIpQLSevbtkHnCDa3zA5cQBt3g8grVAOQ-HVXZgokBslLvvjImHCYQ/viewform?embedded=true&?hl=en"
     width="100%" 
     height="520" 
     frameborder="0">
