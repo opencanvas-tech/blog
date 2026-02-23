@@ -46,3 +46,12 @@ a:hover {
   border-radius: 6px;
   font-weight: 600;
 }
+
+.newsletter-embed {
+  margin-top: 30px;
+}
+
+.newsletter-embed iframe {
+  border: none;
+  border-radius: 8px;
+}
