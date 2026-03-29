@@ -1,9 +1,26 @@
 title: OpenCanvas Blog
-description: Insights, updates, and product thinking.
+description: "Insights on AI automation, agents, and the future of human-AI collaboration."
 baseurl: ""
 url: "https://blog.opencanvas.tech"
 
+permalink: /:title/
+
+author:
+  name: "OpenCanvas Team"
+  bio: "Building the future of desktop automation with AI."
+
+# Replace with your Google Apps Script deployment URL (see NEWSLETTER_SETUP.md)
+newsletter_endpoint: "https://script.google.com/macros/s/AKfycbx7jzP270Y5EbPnSeGcoEZ0d4iX9ZZUqmEWJFsRbOfb9WWfvO-xMucVYyLxJBx8YA26/exec"
+
 theme: minima
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      author: "OpenCanvas Team"
 
 plugins:
   - jekyll-feed

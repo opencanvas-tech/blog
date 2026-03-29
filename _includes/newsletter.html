@@ -1,0 +1,27 @@
+<section class="newsletter" id="newsletter">
+  <div class="newsletter-inner">
+    <h2>Stay in the loop</h2>
+    <p>Get insights on AI automation, product updates, and practical guides delivered to your inbox. No spam, unsubscribe anytime.</p>
+    <form id="newsletter-form" class="newsletter-form" data-endpoint="{{ site.newsletter_endpoint }}">
+      <!-- Honeypot — hidden from humans, bots will fill it -->
+      <div aria-hidden="true" style="position:absolute;left:-9999px;top:-9999px;">
+        <input type="text" name="website" tabindex="-1" autocomplete="off" />
+      </div>
+      <div class="newsletter-input-group">
+        <input
+          type="email"
+          name="email"
+          placeholder="your@email.com"
+          required
+          autocomplete="email"
+          aria-label="Email address"
+        />
+        <button type="submit">
+          <span class="btn-text">Subscribe</span>
+          <span class="btn-loading" style="display:none;">Sending...</span>
+        </button>
+      </div>
+      <div class="newsletter-message" aria-live="polite"></div>
+    </form>
+  </div>
+</section>

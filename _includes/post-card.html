@@ -1,0 +1,16 @@
+{% assign words = post.content | number_of_words %}
+{% assign reading_time = words | divided_by: 200 | plus: 1 %}
+<article class="post-card">
+  <a href="{{ post.url | relative_url }}" class="post-card-link">
+    <div class="post-card-image" style="background: {{ post.image_gradient | default: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)' }};"></div>
+    <div class="post-card-content">
+      <h3>{{ post.title }}</h3>
+      <p class="post-card-description">{{ post.description | default: post.excerpt | strip_html | truncatewords: 25 }}</p>
+      <div class="post-card-meta">
+        <span>{{ post.date | date: "%b %d, %Y" }}</span>
+        <span class="meta-separator">&middot;</span>
+        <span>{{ post.reading_time | default: reading_time }} min read</span>
+      </div>
+    </div>
+  </a>
+</article>

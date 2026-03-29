@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<section class="hero">
+  <h1>{{ site.title }}</h1>
+  <p>{{ site.description }}</p>
+</section>
+
+<section class="articles-section">
+  <h2 class="section-heading">Latest Articles</h2>
+  <div class="articles-feed">
+    {% for post in site.posts %}
+      {% include post-card.html post=post %}
+    {% endfor %}
+  </div>
+</section>
+
+{% include newsletter.html %}
